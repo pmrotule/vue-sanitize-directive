@@ -1,9 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "outDir": "./dist",
     "module": "commonjs",
-    "lib": ["DOM", "ES2017"],
+    "moduleResolution": "node",
+    "target": "esnext",
+    "lib": ["dom", "esnext"],
+    "alwaysStrict": true,
     "strict": true,
-    "esModuleInterop": true
-  }
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "types": ["node"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }

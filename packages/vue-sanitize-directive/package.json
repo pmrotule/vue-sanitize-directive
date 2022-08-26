@@ -1,7 +1,6 @@
 {
   "name": "vue-sanitize-directive",
   "version": "0.2.1",
-  "private": true,
   "description": "Vue directive for HTML sanitization.",
   "author": {
     "name": "Leonardo Piccioni de Almeida",
@@ -14,24 +13,24 @@
     "v-sanitize"
   ],
   "type": "module",
-  "main": "./dist/vue3/vue-sanitize-directive.cjs",
-  "module": "./dist/vue3/vue-sanitize-directive.js",
+  "main": "dist/vue3/vue-sanitize-directive.umd.js",
+  "module": "dist/vue3/vue-sanitize-directive.esm.js",
   "exports": {
     ".": {
-      "import": "./dist/vue3/vue-sanitize-directive.js",
-      "require": "./dist/vue3/vue-sanitize-directive.cjs"
+      "import": "./dist/vue3/vue-sanitize-directive.esm.js",
+      "require": "./dist/vue3/vue-sanitize-directive.umd.js"
     },
     "./vue2": {
-      "import": "./dist/vue2/vue-sanitize-directive.js",
-      "require": "./dist/vue2/vue-sanitize-directive.cjs"
+      "import": "./dist/vue2/vue-sanitize-directive.esm.js",
+      "require": "./dist/vue2/vue-sanitize-directive.umd.js"
     },
     "./vue3": {
-      "import": "./dist/vue3/vue-sanitize-directive.js",
-      "require": "./dist/vue3/vue-sanitize-directive.cjs"
+      "import": "./dist/vue3/vue-sanitize-directive.esm.js",
+      "require": "./dist/vue3/vue-sanitize-directive.umd.js"
     }
   },
   "scripts": {
-    "build": "tsup"
+    "build": "vite build"
   },
   "license": "MIT",
   "dependencies": {
@@ -45,9 +44,7 @@
     "vue2": "npm:vue@^2.7.9",
     "vue3": "npm:vue@^3.2.37"
   },
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": ["packages/*"],
   "directories": {
     "doc": "docs"
   },

@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "vue": "^3.2.37",
-    "vue-sanitize-directive": "file:.."
+    "vue-sanitize-directive": "0.2.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.1",
